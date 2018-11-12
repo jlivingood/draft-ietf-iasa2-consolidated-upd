@@ -11,6 +11,8 @@
 <!ENTITY rfc3710 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3710.xml">
 <!ENTITY rfc4844 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4844.xml">
 <!ENTITY rfc5377 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5377.xml">
+<!ENTITY rfc6702 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6702.xml">
+<!ENTITY rfc7500 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7500.xml">
 
 <!-- Outline of entity definition for citations to Internet Drafts
      &lt;!ENTITY I-D.mrose-writing-rfcs SYSTEM 
@@ -86,7 +88,7 @@
 
 <rfc  docName="draft-ietf-iasa2-consolidated-upd-00b"
      ipr="trust200902"  category="bcp"
-	 updates="2028, 2418, 3005, 3710, 5377">
+	 updates="2028, 2418, 3005, 3710, 5377, 6702, 7500">
      <!-- obsoletes='2821, 821' updates='1123'
         category='std' (bcp, info, exp, historic)  -->   
 
@@ -177,10 +179,15 @@
 	   <t> This document applies that change to the following:
 		  <list style="symbols">
 			 
-			  <t></t>
-			  <t>The RFC Series and RFC Editor
-				<xref target="RFC4844"/> Sections 3.3, 3.4, and 4. </t> 
-			  <t></t>
+			  <t><xref target="RFC4844"/>, The RFC Series and RFC Editor, Sections 3.3, 3.4, and 4. 
+			  This means that... </t> 
+			  <t><xref target="RFC7500"/>, Principles for Operation of Internet Assigned Numbers 
+				  Authority (IANA) Registries, Section 3.4. This means that the IETF LLC the body 
+				  responsible for IETF administrative and financial matters, maintains an SLA with 
+				  the current registry operator, the Internet Corporation for Assigned Names and 
+				  Numbers (ICANN). It also means that both the Internet Architecture Board (IAB) 
+				  and the IETF LLC are accountable to the larger Internet community for the IANA 
+				  registries.</t>
 			  <t></t>
 			  <t></t>
 			  <t></t>
@@ -233,6 +240,11 @@
 			  <t><xref target="RFC3710"/>, An IESG Charter, Section 2. The change means that the Managing 
 				  Director, IETF Secretariat, serves as an ex officio member of the IESG. This is 
 			  consistent with the above-noted update to <xref target="RFC2418"/>.</t>
+			  
+			  <t><xref target="RFC6702"/>, Promoting Compliance with Intellectual Property Rights (IPR)
+                            Disclosure Rules, Section 5. The change means that Working Group (WG) chairs and 
+				  IESH Area Directors (ADs) can request that the  Managing Director, IETF 
+				  Secretariat, make contact with parties that submit early IPR disclosures.</t>
 			  
 	<!-- Depending on responses to Bob Hinden's 20181109 note, maybe..
 			 <t>The RFC Series and RFC Editor <xref target="RFC4844"/>
@@ -301,7 +313,8 @@
 	   &rfc3710;
 	   &rfc4844;
 	   &rfc5377;
-	   
+	   &rfc6702;
+	   &rfc7500;
 
 <reference anchor="RFC-Struct"
 		   target="https://datatracker.ietf.org/doc/draft-ietf-iasa2-struct/">
