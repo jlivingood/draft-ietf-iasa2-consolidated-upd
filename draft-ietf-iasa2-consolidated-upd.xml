@@ -179,8 +179,10 @@
 	   <t> This document applies that change to the following:
 		  <list style="symbols">
 			 
-			  <t><xref target="RFC4844"/>, The RFC Series and RFC Editor, Sections 3.3, 3.4, and 4. 
-			  This means that... </t> 
+			  <t><xref target="RFC4844"/>, The RFC Series and RFC Editor, Sections 3.3, 3.4, and 4.
+			  [JL NOTE: The changes in RFC 4844 are slightly broader that simple word changes. We could exclude 
+				  RFC4844, especially since RFC4844-bis is ready to go.]</t> 
+			  
 			  <t><xref target="RFC7500"/>, Principles for Operation of Internet Assigned Numbers 
 				  Authority (IANA) Registries, Section 3.4. This means that the IETF LLC the body 
 				  responsible for IETF administrative and financial matters, maintains an SLA with 
@@ -188,12 +190,7 @@
 				  Numbers (ICANN). It also means that both the Internet Architecture Board (IAB) 
 				  and the IETF LLC are accountable to the larger Internet community for the IANA 
 				  registries.</t>
-			  <t></t>
-			  <t></t>
-			  <t></t>
-			  <t></t>
-			  <t></t>
-			  <t></t>
+
 			  
 		  </list></t>
 	</section>
@@ -201,21 +198,18 @@
 	<section title="Remove Text About the Connection Between the IAOC and IETF Trust">
 	   <t> Some documents that discuss the IETF Trust or its
 		  relationship to the community describe it, or the Trustees,
-		  in term of the IAOC.  That connection must be eliminated to
-		  reflect the new IASA structure.</t>
+		  in relation to the IAOC.  That connection must be eliminated to
+		  reflect the new IASA 2.0 structure.</t>
+		
 	   <t> This document applies that change to the following:
 		  <list style="symbols">
-			 <t>Advice to the Trustees of the IETF Trust on Rights to
-				Be Granted in IETF Documents <xref target="RFC5377"/>.
+			 <t><xref target="RFC5377"/>, Advice to the Trustees of the IETF Trust on Rights to
+				Be Granted in IETF Documents, Sections 1 and 3.
 				 These changes require dropping "made up of the
-				 members of the IAOC [RFC4371]" after "board of
-				 trustees" in the first paragraph of Section 1 and ",
-				 which is made up of the members of the IAOC, as
-				 described in [RFC4071] and [RFC4371]" in the first
-				 paragraph of Section 3.
-			     <vspace blankLines="0"/> <cref> RFC Editor please
-					note that the bracketed material above are quoted
-					text, not references. </cref></t>
+				 members of the IAOC" after "board of
+				 trustees" in the first paragraph of Section 1 and "which is made up of 
+				 the members of the IAOC" in the first paragraph of Section 3.
+				</t>
 		   </list></t>
 	</section>
 
