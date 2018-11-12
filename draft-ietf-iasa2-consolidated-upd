@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!-- Getting references from the online citation library.
+     There has to be one entity for each item to be referenced. -->
+
+<!-- <!ENTITY rfc2119 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">  -->
+<!ENTITY rfc2418 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2418.xml">
+<!ENTITY rfc3005 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3005.xml">
+<!ENTITY rfc4844 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4844.xml">
+<!ENTITY rfc5377 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5377.xml">
+
+<!-- Outline of entity definition for citations to Internet Drafts
+     &lt;!ENTITY I-D.mrose-writing-rfcs SYSTEM 
+     "http://xml.resource.org/public/rfc/bibxml3/reference.I-D.mrose-writing-rfcs">
+     corresponding to a draft filename draft-mrose-writing-rfcs-nn.txt.
+     Naming convention for draft-ietf-xx-yy is that
+       ietf-xx-yy  is latest version
+       draft-ietf-xx-yy-NN is that version.  Similarly for draft-foo
+       rather than draft-ietf: foo-xx-yy and draft-foo-xx-yy-NN
+   -->
+<!-- Fudge for XMLmind which doesn't have this built in -->
+<!ENTITY nbsp "&#160;">
+
+]>
+<!-- Extra statement used by XSLT processors to control the output style. -->
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<!-- Processing Instructions- PIs (for a complete list and description,
+     see file http://xml.resource.org/authoring/README.html.
+     You may find that some sphisticated editors are not able to edit PIs when palced here.
+     An alternative position is just inside the rfc elelment as noted below. -->
+<!-- Some of the more generally applicable PIs that most I-Ds might want to use -->
+<!-- Try to enforce the ID-nits conventions and DTD validity -->
+<?rfc strict="yes" ?>
+<!-- Items used when reviewing the document -->
+<!-- Controls display of <cref> elements -->
+<?rfc comments="yes" ?>
+<!-- When no, put comments at end in comments section,
+     otherwise, put inline -->
+<?rfc inline="yes" ?>
+<!-- When yes, insert editing marks: editing marks consist of a 
+     string such as <29> printed in the blank line at the 
+     beginning of each paragraph of text. -->
+<?rfc editing="no" ?>
+<!-- Create Table of Contents (ToC) and set some options for it.  
+     Note the ToC may be omitted for very short documents,but idnits insists on a ToC 
+     if the document has more than 15 pages. -->
+<?rfc toc="yes"?>
+<?rfc tocompact="yes"?>
+<!-- If "yes" eliminates blank lines before main section entries. -->
+<?rfc tocdepth="3"?>
+<!-- Sets the number of levels of sections/subsections... in ToC.
+   Can be overridden by 'toc="include"/"exclude"' on the section
+   element-->
+<!-- Choose the options for the references. 
+     Some like symbolic tags in the references (and citations) and others prefer 
+     numbers. The RFC Editor always uses symbolic tags.
+     The tags used are the anchor attributes of the references. -->
+<?rfc symrefs="yes"?>
+<?rfc sortrefs="yes" ?>
+<!-- If "yes", causes the references to be sorted in order of tags.
+			 This doesn't have any effect unless symrefs is "yes"
+          also. --> 
+<!-- These two save paper: Just setting compact to "yes" makes savings by not starting each 
+     main section on a new page but does not omit the blank lines between list items. 
+     If subcompact is also "yes" the blank lines between list items are also omitted. -->
+<?rfc compact="yes" ?>
+<?rfc subcompact="no" ?>
+<!-- end of list of popular I-D processing instructions -->
+
+<!-- Information about the document.
+     category values: std, bcp, info, exp, and historic
+     For Internet-Drafts, specify attribute "ipr".
+         original ipr values are: full3978, noModification3978, noDerivatives3978), 
+         2008 IETF Trust versions: trust200811, noModificationTrust200811, noDerivativeTrust200811
+         2009/Current: trust200902, noModificationTrust200902, noDerivativesTrust200902, pre5378Trust200902
+     Also for Internet-Drafts, you must specify a value for attributes "docName" which is 
+        typically the file name under which it is filed but need not be.
+     If relevant, "iprExtract" may be specified to denote the anchor attribute value of a
+        section that can be extracted for separate publication, it is only useful when the value
+        of "ipr" does not give the Trust full rights.
+     "updates" and "obsoletes" attributes can also be specified here, their arguments are
+        comma-separated lists of RFC numbers (just the numbers) -->
+
+<rfc  docName="draft-ietf-iasa2-consolidated-upd-00b"
+     ipr="trust200902"  category="bcp"
+	 updates="2418, 3005, 5377">
+     <!-- obsoletes='2821, 821' updates='1123'
+        category='std' (bcp, info, exp, historic)  -->   
+
+
+  <!-- ***** FRONT MATTER ***** -->
+
+  <front>
+
+    <title abbrev="IASA2 Consolidated Updates">Consolidated IASA2-Related Document Updates</title>
+
+    <!-- add 'role="editor"' below for the editors if appropriate -->
+    <author fullname="John C Klensin" initials="J.C." surname="Klensin"
+			role="editor">
+	   <organization/>
+      <address>
+        <postal>
+          <street>1770 Massachusetts Ave, Ste 322</street>
+          <city>Cambridge</city> <region>MA</region>
+          <code>02140</code>
+          <country>USA</country>
+        </postal>
+        <phone>+1 617 245 1457</phone>
+        <email>john-ietf@jck.com</email>
+      </address>
+    </author>
+
+    <date month="November" day="9" year="2018" />
+
+    <!-- Meta-data Declarations -->
+    <area>General</area>
+
+    <!-- WG name at the upper left corner of the doc,
+         IETF fine for individual submissions.  You can also
+         omit this element in which case it defaults to "Network Working Group" -
+         a hangover from the ancient history of the IETF! -->
+    <workgroup>IASA2</workgroup>
+
+	<!-- You can add <keyword/> elements here.  They will be incorporated into HTML output
+         files in a meta tag but they have no effect on text or nroff output. -->
+	<!-- <keyword>Text</keyword> (as many of those elements as needed -->
+
+	
+    <abstract>
+      <t>In addition to more substantive changes that are described in
+		 other documents, the transition to the 2018 IETF
+		 Administrative Support structure changes several position
+		 titles and organizational relationships that are referenced
+		 in other documents.  Rather than reissue those documents,
+		 this specification provides updates to them to ensure that
+		 there is no confusion due to changes in terminology.</t>
+    </abstract>
+
+	<!-- Note here if needed
+	   <note title=""><t> .... </t></note> -->
+	
+  </front>
+
+  <middle>
+    <section title="Introduction">
+      <t>The IETF initiated a major revision of its administrative
+		 support arrangements and procedures in 2018
+		 <xref target="RFC-Struct"/>.  Those changes have been
+		 specified in a series of documents, notably a description of
+		 changes to the IETF Trust <xref target="RFC-trust-update"/>,
+		 the rationale for it <xref target="RFC-trust-rationale"/>,
+		 and adjustments to the procedures for nominations and
+		 selections for relevant positions
+		 <xref target="RFC-7437bis"/>.
+	     Among the substantive changes in those documents are changes
+		 in names of organizations, position titles, and associated
+		 relationships.  Rather than reissue the documents that
+		 address other topics but mention those names, titles, and
+		 relationships, this specification provides updates to them
+		 to ensure that there is no confusion due to changes in
+		 terminology.</t>
+	  <t> This document updates RFCs 2418, 3005, and 5377 (citations
+		 in context below) to make those
+		 terminology and related changes.  The four sections that
+		 follow identify the relevant documents and the required
+		 changes. </t> 
+
+	  <t><cref> Note in Draft: This document lists changes that the WG
+		 may choose to process as standalone replacement documents
+		 instead.   The relevant sections are provided to speed things
+		 along should it decide to not do that.</cref> </t>
+	  
+    <!--  <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+      "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+      document are to be interpreted as described in
+	  <xref target="RFC2119">RFC 2119</xref>.</t> -->
+
+    </section>
+
+    <section title="Replacement of IAOC with IETF Administrative LLC"
+			anchor="LLCRepl"> 
+		<t>All mentions of the IAOC shall be updated and replaced by
+	   the IETF Administration LLC.</t>
+	   <t> This document applies that change to the following:
+		  <list style="symbols">
+			 <t>The RFC Series and RFC Editor
+				<xref target="RFC4844"/> Sections 3.3, 3.4, and 4. </t> 
+		  </list></t>
+	</section>
+
+	<section title="Remove Text About the Connection Between the IAOC and IETF Trust">
+	   <t> Some documents that discuss the IETF Trust or its
+		  relationship to the community describe it, or the Trustees,
+		  in term of the IAOC.  That connection must be eliminated to
+		  reflect the new IASA structure.</t>
+	   <t> This document applies that change to the following:
+		  <list style="symbols">
+			 <t>Advice to the Trustees of the IETF Trust on Rights to
+				Be Granted in IETF Documents <xref target="RFC5377"/>.
+				 These changes require dropping "made up of the
+				 members of the IAOC [RFC4371]" after "board of
+				 trustees" in the first paragraph of Section 1 and ",
+				 which is made up of the members of the IAOC, as
+				 described in [RFC4071] and [RFC4371]" in the first
+				 paragraph of Section 3.
+			     <vspace blankLines="0"/> <cref> RFC Editor please
+					note that the bracketed material above are quoted
+					text, not references. </cref></t>
+		   </list></t>
+	</section>
+
+	<section title="Replacement of the IETF Executive Director position with the Managing Director, IETF Secretariat">
+	   <t>Under the IASA2 structure, the former position of IETF
+		  Executive Director has been replaced by a Managing Director
+		  of the IETF Secretariat.  The latter position has  a
+		  different role and connotation.</t>
+	   <t> This document applies that change to the following:
+		  <list style="symbols">
+			 <t>IETF Working Group Guidelines and Procedures
+				<xref target="RFC2418"/></t>
+	<!-- Depending on responses to Bob Hinden's 20181109 note, maybe..
+			 <t>The RFC Series and RFC Editor <xref target="RFC4844"/>
+				(note that this document is also changed in
+			    <xref target="LLCRepl"/> above).</t> -->
+		  </list></t>
+	   <t><cref> Note in Draft: Bob Hinden's note of November 10,
+		  2018 11:37 +0900 indicates that RFC4844 should continue to
+		  reference the IETF Executive Director.</cref></t>
+	</section>
+
+	<section title="Remove the IETF Executive Director as an Option">
+	   <t> In a few cases, the change in role from the IETF Executive
+		  Director to the Managing Director of the IETF Secretariat
+		  makes the use of the latter for particular functions
+		  inappropriate.  The relevant documents are updated to remove
+		  the IETF Executive Director from the list of people with
+		  specific responsibilities or authority.</t>
+	   <t> This document applies that change to the following:
+		  <list style="symbols">
+			 <t>IETF Discussion List Charter
+				<xref target="RFC3005"/> modified to remove the IETF
+				Executive Director allowed to restrict people from
+				posting, etc.</t>
+		  </list></t>
+	</section>
+	   
+
+
+    <section anchor="Acknowledgements" title="Acknowledgements">
+      <t> ..to be supplied after version 00</t>
+    </section>
+
+	<section title="Contributors">
+	   <t>Jason Livingood did the hard work of identifying the
+		  documents that required updating and supplied considerable
+		  text used in this document.</t>
+	</section>
+
+    <section anchor="IANA" title="IANA Considerations">
+	  <t><cref> RFC Editor: Please remove this section before
+		 publication.</cref></t>
+      <t>This memo includes no requests to or actions for IANA.</t>
+    </section>
+
+    <section anchor="Security" title="Security Considerations">
+      <t>The changes specified in this document are matters of
+		 terminology and organizational structure derived from
+		 documents it references.  It should have no effect on
+		 Internet security.</t>
+    </section>
+  </middle>
+
+  <!--  *****BACK MATTER ***** -->
+
+  <back>
+    <!-- References split to informative and normative -->
+
+    <references title="Normative References">
+
+	  <!-- &rfc2119; -->
+	   &rfc2418;
+	   &rfc3005;
+	   &rfc4844;
+	   &rfc5377;
+	   
+
+<reference anchor="RFC-Struct"
+		   target="https://datatracker.ietf.org/doc/draft-ietf-iasa2-struct/">
+        <front>
+          <title>Record of Proposed Structure of the IETF
+			 Administrative Support Activity (IASA), Version
+			 2.0</title>
+          <author initials="B." surname="Haberman">
+            <organization></organization>
+	        <address/>
+          </author>
+          <author initials="J." surname="Hall">
+            <organization></organization>
+	        <address/>
+          </author>
+          <author initials="J." surname="Livingood" role="editor">
+            <organization></organization>
+	        <address/>
+          </author>		  
+          <date year="2018" />
+        </front>
+      </reference>
+			 
+<reference anchor="RFC-trust-update"
+		target="https://datatracker.ietf.org/doc/draft-ietf-iasa2-trust-update/">
+        <front>
+          <title>Update to the Process for Selection of Trustees for
+			 the IETF Trust</title>
+          <author initials="J." surname="Arkko">
+            <organization></organization>
+	        <address/>
+          </author>
+          <author initials="T." surname="Hardie">
+            <organization></organization>
+	        <address/>
+          </author>
+          <date year="2018" />
+        </front>
+      </reference>
+
+<reference anchor="RFC-trust-rationale"
+	 target="https://datatracker.ietf.org/doc/draft-ietf-iasa2-trust-rationale/">
+        <front>
+          <title>Discussion of the IASA 2.0 Changes as They Relate to
+			 the IETF Trust</title> 
+          <author initials="J." surname="Arkko">
+            <organization></organization>
+	        <address/>
+          </author>
+          <date year="2018" />
+        </front>
+      </reference>
+
+<reference anchor="RFC-7437bis"
+		   target="https://datatracker.ietf.org/doc/draft-ietf-iasa2-rfc7437bis/">
+        <front>
+          <title>IAB, IESG, and IETF LLC Selection, Confirmation, and
+			 Recall Process: Operation of the IETF Nominating and
+			 Recall Committees</title>		  
+          <author initials="M." surname="Kucherawy" role="editor">
+            <organization></organization>
+	        <address/> </author>
+          <author initials="R." surname="Hinden" role="editor">
+            <organization></organization>
+	        <address/> </author>
+          <author initials="J." surname="Livingood" role="editor">
+            <organization></organization>
+	        <address/>
+          </author>
+          <date year="2018" />
+        </front>
+      </reference>
+   	   
+    </references>
+
+   <!--  <references title="Informative References">
+	   
+    </references>  -->
+
+
+<!--   Sections below here become  Appendices.  -->
+	
+
+<!--
+	<section title="Change Log" anchor="ChangeLog">
+	    <t>RFC Editor: Please remove this appendix before
+	publication.</t>
+
+	<section title="Changes from version -MM (2017-MM-DD) to -NN">
+          <t><list style="symbols">
+			 <t>	... </t>
+		  </list></t>
+	   </section>
+	
+	</section>      -->
+
+  </back>
+</rfc>
