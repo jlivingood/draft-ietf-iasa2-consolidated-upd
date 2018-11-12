@@ -5,8 +5,10 @@
      There has to be one entity for each item to be referenced. -->
 
 <!-- <!ENTITY rfc2119 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">  -->
+<!ENTITY rfc2028 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2028.xml">
 <!ENTITY rfc2418 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2418.xml">
 <!ENTITY rfc3005 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3005.xml">
+<!ENTITY rfc3710 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3710.xml">
 <!ENTITY rfc4844 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4844.xml">
 <!ENTITY rfc5377 PUBLIC '' "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5377.xml">
 
@@ -84,7 +86,7 @@
 
 <rfc  docName="draft-ietf-iasa2-consolidated-upd-00b"
      ipr="trust200902"  category="bcp"
-	 updates="2418, 3005, 5377">
+	 updates="2028, 2418, 3005, 3710, 5377">
      <!-- obsoletes='2821, 821' updates='1123'
         category='std' (bcp, info, exp, historic)  -->   
 
@@ -128,13 +130,12 @@
 
 	
     <abstract>
-      <t>In addition to more substantive changes that are described in
-		 other documents, the transition to the 2018 IETF
-		 Administrative Support structure changes several position
+      <t>In 2018, the IETF began the transition to a new administrative structure, and updated its 
+	      IETF Administrative Support Activity (IASA) to a new "IASA 2.0" structure. In addition to more substantive 
+	      changes that are described in other documents, the IASA 2.0 structure changes several position
 		 titles and organizational relationships that are referenced
-		 in other documents.  Rather than reissue those documents,
-		 this specification provides updates to them to ensure that
-		 there is no confusion due to changes in terminology.</t>
+		 in other documents.  Rather than reissue those documents individually,
+		 this document provides a unified update to them.</t>
     </abstract>
 
 	<!-- Note here if needed
@@ -144,32 +145,23 @@
 
   <middle>
     <section title="Introduction">
-      <t>The IETF initiated a major revision of its administrative
-		 support arrangements and procedures in 2018
-		 <xref target="RFC-Struct"/>.  Those changes have been
-		 specified in a series of documents, notably a description of
-		 changes to the IETF Trust <xref target="RFC-trust-update"/>,
-		 the rationale for it <xref target="RFC-trust-rationale"/>,
-		 and adjustments to the procedures for nominations and
-		 selections for relevant positions
-		 <xref target="RFC-7437bis"/>.
-	     Among the substantive changes in those documents are changes
-		 in names of organizations, position titles, and associated
-		 relationships.  Rather than reissue the documents that
-		 address other topics but mention those names, titles, and
-		 relationships, this specification provides updates to them
-		 to ensure that there is no confusion due to changes in
-		 terminology.</t>
-	  <t> This document updates RFCs 2418, 3005, and 5377 (citations
-		 in context below) to make those
-		 terminology and related changes.  The four sections that
-		 follow identify the relevant documents and the required
-		 changes. </t> 
+	    
+ 	<t>In 2018, the IETF began the transition to a new administrative structure, and updated its 
+	      IETF Administrative Support Activity (IASA) to a new "IASA 2.0" structure <xref target="RFC-Struct"/>. 
+		Key IASA 2.0 changes have been
+		 specified in a series of documents, including 
+		 changes to the IETF Trust <xref target="RFC-trust-update"/> <xref target="RFC-trust-rationale"/> and 		 adjustments to the procedures for nominations and selections for relevant positions
+		<xref target="RFC-7437bis"/>.</t>
+		    
+	<t>In addition to more substantive 
+	      changes that are described in those and other documents, the IASA 2.0 structure changes several position
+		 titles and organizational relationships that are referenced
+		 in other documents.  Rather than reissue those documents individually,
+		this document provides a unified update to them.</t>
+	     
 
-	  <t><cref> Note in Draft: This document lists changes that the WG
-		 may choose to process as standalone replacement documents
-		 instead.   The relevant sections are provided to speed things
-		 along should it decide to not do that.</cref> </t>
+	  <t> This document updates several RFCs cited below to make those
+		 terminology and related changes.</t> 
 	  
     <!--  <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
       "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
@@ -178,14 +170,24 @@
 
     </section>
 
-    <section title="Replacement of IAOC with IETF Administrative LLC"
-			anchor="LLCRepl"> 
-		<t>All mentions of the IAOC shall be updated and replaced by
-	   the IETF Administration LLC.</t>
+    <section title="Replacement of IAOC with IETF Administrative LLC" anchor="LLCRepl"> 
+		<t>All mentions of the Internet Administrative Oversight Committee (IAOC), which is phased out under the 
+			IASA 2.0 structure, shall be updated and replaced by the IETF Administration LLC (IETF LLC).</t>
+	    
 	   <t> This document applies that change to the following:
 		  <list style="symbols">
-			 <t>The RFC Series and RFC Editor
+			 
+			  <t></t>
+			  <t>The RFC Series and RFC Editor
 				<xref target="RFC4844"/> Sections 3.3, 3.4, and 4. </t> 
+			  <t></t>
+			  <t></t>
+			  <t></t>
+			  <t></t>
+			  <t></t>
+			  <t></t>
+			  <t></t>
+			  
 		  </list></t>
 	</section>
 
@@ -211,14 +213,27 @@
 	</section>
 
 	<section title="Replacement of the IETF Executive Director position with the Managing Director, IETF Secretariat">
-	   <t>Under the IASA2 structure, the former position of IETF
-		  Executive Director has been replaced by a Managing Director
-		  of the IETF Secretariat.  The latter position has  a
-		  different role and connotation.</t>
+	   <t>Under the IASA 2.0 structure, the responsibilities associated with the position that was referred to as 
+		   the IETF Executive Director, are now managed by the position known as the Managing Director, IETF 
+		   Secretariat. The latter title, IETF Executive Director, has been assigned new and different 
+		   responsibilities as outlined in <xref target="RFC-Struct"/>.</t>
+		
 	   <t> This document applies that change to the following:
 		  <list style="symbols">
-			 <t>IETF Working Group Guidelines and Procedures
-				<xref target="RFC2418"/></t>
+			 <t><xref target="RFC2028"/>, The Organizations Involved in the IETF Standards Process, 
+				 Section 3.3. This means that the administrative functions necessary to 
+				 support the activities of the IETF are performed by a Secretariat, led by the 
+				 Managing Director, IETF Secretariat, and consisting of his or her staff in 
+				 the IETF Secretariat.</t>
+			  
+			 <t><xref target="RFC2418"/>, IETF Working Group Guidelines and Procedures, Section 1. The change 
+				 means that the Managing Director, IETF Secretariat, serves as an ex officio member 
+				 of the Internet Engineering Steering Group (IESG). </t>
+			  
+			  <t><xref target="RFC3710"/>, An IESG Charter, Section 2. The change means that the Managing 
+				  Director, IETF Secretariat, serves as an ex officio member of the IESG. This is 
+			  consistent with the above-noted update to <xref target="RFC2418"/>.</t>
+			  
 	<!-- Depending on responses to Bob Hinden's 20181109 note, maybe..
 			 <t>The RFC Series and RFC Editor <xref target="RFC4844"/>
 				(note that this document is also changed in
@@ -230,18 +245,19 @@
 	</section>
 
 	<section title="Remove the IETF Executive Director as an Option">
-	   <t> In a few cases, the change in role from the IETF Executive
-		  Director to the Managing Director of the IETF Secretariat
-		  makes the use of the latter for particular functions
-		  inappropriate.  The relevant documents are updated to remove
-		  the IETF Executive Director from the list of people with
-		  specific responsibilities or authority.</t>
+	   <t> In a few cases, it is no longer appropriate for either the IETF Executive
+		  Director or the Managing Director, IETF Secretariat to perform a particular 
+		   function. These documents are updated to remove mention of the IETF Executive 
+		   Director from the list of people with specific responsibilities or authority and 
+		   will not be updated to the Managing Director, IETF Secretariat.</t>
+	  
 	   <t> This document applies that change to the following:
 		  <list style="symbols">
-			 <t>IETF Discussion List Charter
-				<xref target="RFC3005"/> modified to remove the IETF
-				Executive Director allowed to restrict people from
-				posting, etc.</t>
+			 <t><xref target="RFC3005"/>, IETF Discussion List Charter, in the section 
+				 entitled Charter for the IETF Discussion List. This document is updated 
+				 to remove the IETF Executive Director from the list of those allowed 
+				 to impose any permissible restrictions. As a result, only the IETF Chair, 
+				 or a sergeant-at-arms appointed by the Chair, are empowered to do so.</t>
 		  </list></t>
 	</section>
 	   
@@ -279,8 +295,10 @@
     <references title="Normative References">
 
 	  <!-- &rfc2119; -->
-	   &rfc2418;
+	   &rfc2028;
+           &rfc2418;
 	   &rfc3005;
+	   &rfc3710;
 	   &rfc4844;
 	   &rfc5377;
 	   
